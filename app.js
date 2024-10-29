@@ -32,7 +32,11 @@ function getRandomColor() {
 
 let copyText = document.getElementsByClassName('btnCopy');
 copyText[0].addEventListener('click', (e) =>{
-	if (!navigator.clipboard) {
-		clipboard.writeText(nameColor[0].innerText);
-	  }
+	navigator.clipboard.writeText(nameColor[0].textContext);
+ .then(() => {
+   console.log('Good Copy');
+ });
+ .catch(err => {
+   console.log('Something went wrong', err);
+ });
 });
