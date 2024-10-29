@@ -1,7 +1,7 @@
-const frame = document.getElementsByClassName('main_frame');
-const nameColor = document.getElementsByClassName('main_name');
-const btn_next = document.getElementsByClassName('btn_next');
-const btn_back = document.getElementsByClassName('btn_back');
+const frame = document.getElementsByClassName('mainFrame');
+const nameColor = document.getElementsByClassName('mainName');
+const btn_next = document.getElementsByClassName('btnNext');
+const btn_back = document.getElementsByClassName('btnBack');
 let hex = '0123456789ABCDEF';
 let arrayColors = [];
 let clickIndex = 0;
@@ -29,3 +29,10 @@ function getRandomColor() {
 	}
   return hexColor;
 };
+
+let copyText = document.getElementsByClassName('btnCopy');
+copyText.addEventListener('click', (e) =>{
+	if (!navigator.clipboard) {
+		clipboard.writeText(nameColor[0].innerText);
+	  }
+});

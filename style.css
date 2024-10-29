@@ -7,19 +7,19 @@
 	background-color: #190303;
  }
  
- .main_page {
-	margin: 100px 550px;
+ .mainPage {
+	margin: 120px 0px;
 	padding: 10px;
 	align-content: center;
 	justify-content: center;
-	width: 400px;
+	width: 450px;
 	height: 450px;
 	text-align: center;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	background: whitesmoke;
  }
  
- .main_frame {
+ .mainFrame {
 	width: 300px;
 	height: 250px;
 	padding: 30px;
@@ -27,19 +27,26 @@
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
  
- .main_name {
+ .mainName {
 	text-align: center;
 	padding: 10px;
  }
  
- .btn_next {
+ .btnNext {
 	padding: 10px;
 	border-radius: 5px;
 	background: white;
 	color: black;
  }
 
- .btn_back {
+ .btnBack {
+	padding: 10px;
+	border-radius: 5px;
+	background: white;
+	color: black;
+ }
+
+ .btnCopy {
 	padding: 10px;
 	border-radius: 5px;
 	background: white;
