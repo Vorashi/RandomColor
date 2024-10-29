@@ -31,7 +31,7 @@ function getRandomColor() {
 };
 
 let copyText = document.getElementsByClassName('btnCopy');
-copyText.addEventListener('click', (e) =>{
+copyText[0].addEventListener('click', (e) =>{
 	if (!navigator.clipboard) {
 		clipboard.writeText(nameColor[0].innerText);
 	  }
